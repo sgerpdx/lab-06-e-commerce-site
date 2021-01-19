@@ -1,7 +1,6 @@
 //work on arrays here
 
-
-const medicalEquipment = [
+export const medicalEquipment = [
     {
         id: 1001,
         item: 'Small Hypospray',
@@ -11,7 +10,7 @@ const medicalEquipment = [
         consumable: true,
         price: 0,
         value: 10,
-    }
+    },
 
     {
         id: 1002,
@@ -22,7 +21,7 @@ const medicalEquipment = [
         consumable: true,
         price: 0,
         value: 15,
-    }
+    },
 
     {
         id: 1003,
@@ -33,7 +32,7 @@ const medicalEquipment = [
         consumable: false,
         price: 0,
         value: 100,
-    }
+    },
 
     {
         id: 1004,
@@ -44,7 +43,7 @@ const medicalEquipment = [
         consumable: true,
         price: 0,
         value: 12,
-    }
+    },
 
     {
         id: 1004,
@@ -55,7 +54,7 @@ const medicalEquipment = [
         consumable: false,
         price: 0,
         value: 9,
-    }
+    },
 
     {
         id: 1005,
@@ -66,7 +65,7 @@ const medicalEquipment = [
         consumable: false,
         price: 0,
         value: 8,
-    }
+    },
 
     {
         id: 1006,
