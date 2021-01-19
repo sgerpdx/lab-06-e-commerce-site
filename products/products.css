@@ -1,0 +1,32 @@
+
+body {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+main {
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inventory {
+    display: flex;
+    flex-wrap: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 4px;
+}
