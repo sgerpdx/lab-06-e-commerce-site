@@ -38,7 +38,7 @@ export const medicines = [
     },
 
     {
-        id: 1004,
+        id: 1005,
         name: 'Emergency Blanket',
         image: 'e-blanket.jpg',
         weight: 8,
@@ -47,7 +47,7 @@ export const medicines = [
     },
 
     {
-        id: 1005,
+        id: 1006,
         name: 'UV Water Purifier',
         image: 'uv-water-filter.jpg',
         weight: 7,
@@ -56,7 +56,7 @@ export const medicines = [
     },
 
     {
-        id: 1006,
+        id: 1007,
         name: 'Cortical Stimulator',
         image: 'cortical-stimulator.jpg',
         weight: 8,
