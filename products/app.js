@@ -1,16 +1,15 @@
 // import functions and grab DOM elements
 
 import { renderItem } from './render-products.js';
-import { medicalEquipment } from './equipment.js';
+import { medicines } from './equipment.js';
 
 // initialize state
 
 const list = document.getElementById('list');
 
-for (let med in medicalEquipment) {
+for (const med of medicines) {
 
     const inventoryItem = renderItem(med);
-
     list.prepend(inventoryItem);
 
 }
