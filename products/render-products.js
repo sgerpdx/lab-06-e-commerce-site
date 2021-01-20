@@ -2,7 +2,6 @@
 
 export function renderItem(medicine) {
 
-    console.log(medicine);
     const li = document.createElement('li');
     li.classList.add('medical-item');
 
@@ -18,7 +17,7 @@ export function renderItem(medicine) {
 
     const img = document.createElement('img');
     img.classList.add('medicine-image');
-    img.src = `../assets/pictures/${medicine.image}`;
+    img.src = `../assets/${medicine.image}`;
     li.append(img);
 
     const pWeight = document.createElement('p');
