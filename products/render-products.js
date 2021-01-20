@@ -30,22 +30,6 @@ export function renderItem(item) {
     pSize.textContent = item.size;
     li.append(pSize);
 
-    // const pConsumable = document.createElement('p');
-    // pConsumable.classList.add('item-consumable');
-    // pConsumable.textContent = item.consumable;
-    // li.append(pConsumable);
-
-    // if (item.isConsumable) {
-    //     pConsumable.textContent = 'Consumable';
-    // } else {
-    //     pConsumable.textContent = 'Non-consumable';
-    // }
-
-    // const pPrice = document.createElement('p');
-    // pPrice.classList.add('item-price');
-    // pPrice.textContent = item.price;
-    // li.append(pPrice);
-
     const pValue = document.createElement('p');
     pValue.classList.add('item-value');
     pValue.textContent = `${item.value} Borg Bucks`;

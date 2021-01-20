@@ -26,7 +26,12 @@ main {
 
 ul {
     list-style-type: none;
+    padding: 4px;
+}
+
+li {
     border: solid 2px white;
     border-radius: 8px;
     padding: 4px;
+    margin: 8px;
 }
