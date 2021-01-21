@@ -85,9 +85,9 @@ test('This test should take in a medical item object and retun a list item (<li>
         value: 30
     };
 
-    const expected = `<tr><td>Scanner</td><td>4</td><td>120</td></tr>`;
+    const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120</td></tr>`;
 
-    const actual = renderCart(cartScanner, inventoryScanner);
+    const actual = renderCart(inventoryScanner, cartScanner);
 
     assert.equal(actual.outerHTML, expected);
 });
