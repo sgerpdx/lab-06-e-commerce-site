@@ -1,8 +1,9 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 // import { renderItem } from '../products/render-products.js';
-import { findById } from '../cart/utils.js';
+import { findById, getItemTotal } from '../cart/utils.js';
 import { medicines } from '../products/equipment.js';
+import { cart } from '../cart/cart.js';
 
 const test = QUnit.test;
 
@@ -55,6 +56,43 @@ test('This test should take in the unique item id 1002 and the array medicines a
 
 
 // Test for calcItemTotal function:
+
+test('This test should take in the unique item id 1002 and the arrays cart and medicines and return a total value of ', (assert) => {
+
+    const expected = '80 Borg Bucks';
+
+    const actual = getItemTotal(1003, cart, medicines);
+
+    assert.deepEqual(actual, expected);
+});
+
+
+// export function getItemTotal(id, arrayOne, arrayTwo) {
+
+//     for (let item of arrayOne) {
+//         if (arrayOne.id === id) {
+//             const itemQuantity = item.quantity;
+//         }
+//     }
+
+//     for (let med of arrayTwo) {
+//         if (arrayTwo.id === id) {
+//             const medPrice = med.price;
+//         }
+//     }
+
+//     return itemQuantity * medPrice;
+
+
+// }
+
+
+
+
+
+
+
+
 
 
 // Test for renderCart function:

@@ -1,9 +1,12 @@
-// import functions and grab DOM elements
+
+
 
 import { renderItem } from './render-products.js';
-import { medicines } from './equipment.js';
+import { medicines } from './products-data.js';
 
-// initialize state
+
+
+
 
 const list = document.getElementById('list');
 
@@ -15,6 +18,6 @@ for (const med of medicines) {
 }
 
 
-
+// initialize state
 // set event listeners to update state and DOM
 

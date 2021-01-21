@@ -1,4 +1,3 @@
-//work on arrays here
 
 export const medicines = [
     {
