@@ -1,6 +1,3 @@
-
-import { cart } from '../cart/cart-data.js';
-import { medicines } from './products-data.js';
 import { findById, calcItemTotal } from '../utils.js';
 
 export function calcOrderTotal(medicines, cart) {
