@@ -1,10 +1,14 @@
 import { findById, calcOrderTotal } from '../utils.js';
 import { medicines } from '../products/products-data.js';
-import { cart } from './cart-data.js';
+//import { cart } from './cart-data.js';
 import { renderCart } from './render-cart.js';
 
 
 const tbody = document.getElementById('table-body');
+
+const stringyCart = localStorage.getItem('CART');
+const cart = JSON.parse(stringyCart);
+
 
 for (let item of cart) {
 
