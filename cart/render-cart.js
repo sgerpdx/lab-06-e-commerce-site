@@ -17,7 +17,7 @@ export function renderCart(inventory, merch) {
 
     const tdPrice = document.createElement('td');
     tdPrice.classList.add('merch-total-price');
-    tdPrice.textContent = calcItemTotal(inventory.price, merch.quantity);
+    tdPrice.textContent = `${calcItemTotal(inventory.price, merch.quantity)} Locutii`;
     tr.append(tdPrice);
 
     return tr;

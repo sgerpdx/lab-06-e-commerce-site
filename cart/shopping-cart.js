@@ -23,7 +23,7 @@ for (let item of cart) {
 
 const tfoot = document.getElementById('table-foot');
 const totalPrice = calcOrderTotal(cart, medicines);
-tfoot.append(totalPrice);
+tfoot.append(`Order Total: ${totalPrice} Locutii`);
 
 const button = document.getElementById('requisition');
 //button.disabled = true;
