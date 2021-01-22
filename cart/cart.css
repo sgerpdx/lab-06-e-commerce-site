@@ -13,7 +13,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Audiowide', cursive;
@@ -66,11 +66,41 @@ li {
 }
 
 table {
-    
+    width: 540px;
+}
+
+table, th, tr, tbody, tfoot {
+    border: solid 1px white;
+    border-radius: 5px;
 }
 
 
 footer {
     display: flex;
 
+}
+
+.shopping-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.table-body {
+    width: 720px;
+}
+
+button {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.button-box {
+    padding: 20px;
 }
