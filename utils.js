@@ -1,6 +1,3 @@
-// import { medicines } from '../products/equipment.js';
-// import { cart } from './cart.js';
-
 export function findById(id, array) {
 
     for (let item of array) {
@@ -19,31 +16,28 @@ export function calcItemTotal(quantity, price) {
     return quantity * price;
 }
 
-export function calcOrderTotal(medicines, cart) {
+
+export function calcOrderTotal(cartArray, medicinesArray) {
 
     let orderTotal = 0;
 
-    for (let med of medicines) {
+    for (let item of cartArray) {
 
-        if (medicines.item.id === cart.item.id) {
+        const lineItem = item;
 
-            const itemInCart = med.id;
+        const medItem = findById(lineItem.id, medicinesArray);
 
-            const inventoryDescription = findById(itemInCart, medicines);
-            const cartDescription = findById(itemInCart, cart);
+        const medPrice = medItem.price;
+        const cartQuantity = lineItem.quantity;
 
-            const inventoryPrice = inventoryDescription.price;
-            const cartQuantity = cartDescription.quantity;
+        const itemTotal = calcItemTotal(cartQuantity, medPrice);
 
-            const itemTotal = calcItemTotal(cartQuantity, inventoryPrice);
-
-            orderTotal = orderTotal + itemTotal;
-
-        }
+        orderTotal = orderTotal + itemTotal;
 
     }
 
     return orderTotal;
 
-
 }
+
+

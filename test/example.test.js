@@ -68,7 +68,7 @@ test('This test should take in a quantity of 8 and a price of 10 and return a to
 
 // Test for renderCart function:
 
-test('This test should take in a medical item object and retun a list item (<li>)', (assert) => {
+test('This test should take in separate-array objects cartScanner and inventoryScanner and retun a table row (<tr>)', (assert) => {
 
     const cartScanner = {
         id: 1010,
@@ -94,11 +94,57 @@ test('This test should take in a medical item object and retun a list item (<li>
 
 // Test for calcOrderTotal function:
 
-// test('This test should take in a quantity of 8 and a price of 10 and return a total price of 80', (assert) => {
+test('This test should take in arrays fruitCart and fruitCatalog and return a total oder price of 17', (assert) => {
 
-//     const expected = 80;
+    const fruitCart = [
+        {
+            id: 22,
+            quantity: 3
+        },
+        {
+            id: 27,
+            quantity: 2
+        }
+    ];
 
-//     const actual = calcItemTotal(8, 10);
+    const fruitCatalog = [
+        {
+            id: 20,
+            name: 'Apple',
+            image: 'apple.png',
+            weight: 6,
+            size: 'Small',
+            price: 2
+        },
+        {
+            id: 22,
+            name: 'Plum',
+            image: 'plum.png',
+            weight: 4,
+            size: 'Small',
+            price: 3
+        },
+        {
+            id: 25,
+            name: 'Grape',
+            image: 'grape.png',
+            weight: 1,
+            size: 'Small',
+            price: 1
+        },
+        {
+            id: 27,
+            name: 'Peach',
+            image: 'peach.png',
+            weight: 8,
+            size: 'Small',
+            price: 4
+        }
+    ];
 
-//     assert.deepEqual(actual, expected);
-// });
+    const expected = 17;
+
+    const actual = calcOrderTotal(fruitCart, fruitCatalog);
+
+    assert.deepEqual(actual, expected);
+});

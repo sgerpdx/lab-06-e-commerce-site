@@ -1,5 +1,5 @@
-import { medicines } from '../products/products-data.js';
-import { cart } from './cart-data.js';
+// import { medicines } from '../products/products-data.js';
+// import { cart } from './cart-data.js';
 import { calcItemTotal } from '../utils.js';
 
 export function renderCart(inventory, merch) {
