@@ -24,7 +24,7 @@ export const medicines = [
         name: 'Medical Tricorder',
         image: 'medical-tricorder.jpg',
         weight: 4,
-        size: 'N/A',
+        size: 'one-size',
         price: 100,
         currency: 'locutus-coin-40.png'
     },
