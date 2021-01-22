@@ -30,7 +30,7 @@ export function renderItem(medicine) {
 
     const pValue = document.createElement('p');
     pValue.classList.add('medicine-value');
-    pValue.textContent = `${medicine.value} Borg Bucks`;
+    pValue.textContent = `${medicine.price} Borg Bucks`;
     li.append(pValue);
 
     const button = document.createElement('button');
