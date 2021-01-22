@@ -38,6 +38,7 @@ const FRUITS = 'FRUIT';
 const CART = 'CART'; //makes it so that this string doesn't have to be constantly re-typed
 const defaultEmptyCart = [];
 // the function below is about retrieving the cart from locStor, or substituting an empty array if there is none;
+//used
 function getCart() {
     const stringyCart = localStorage.getItem(CART);
 
@@ -71,15 +72,15 @@ export function clearCart() {
     localStorage.setItem(CART, stringyDefaultCart);
 }
 
-
+//used
 export function setCart(cart) {
 
     const stringyCart = JSON.stringify(cart);
-
+    // Ben helped me to nest this function inside addToCart, I believe...
     localStorage.setItem(CART, stringyCart);
 }
 
-
+//used
 export function addToCart(id) {
     // if id already in cart, increment; otherwise, initialize new object into cart;
 

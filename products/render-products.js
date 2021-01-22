@@ -1,4 +1,5 @@
-import { getCart } from '../cart/cart-api.js';
+import { addToCart, getCart } from '../cart/cart-api.js';
+import { medicines } from './products-data.js';
 
 export function renderItem(medicine) {
 
@@ -36,18 +37,13 @@ export function renderItem(medicine) {
     li.append(pValue);
 
     const button = document.createElement('button');
-
-    button.addEventListener('click', () => {
-
-        //const CART = 'CART';
-        //const defaultEmptyCart = [];
-        return getCart();
-
-    });
-
-
     button.textContent = 'Add to Cart';
     li.append(button);
+    button.addEventListener('click', () => {
+
+        addToCart(medicine.id);
+
+    });
 
     return li;
 
