@@ -6,7 +6,7 @@ export const medicines = [
         image: 'hypospray-small.jpg',
         weight: 4,
         size: 'small',
-        value: 10
+        price: 10
     },
 
     {
@@ -15,7 +15,7 @@ export const medicines = [
         image: 'hypospray-large.jpg',
         weight: 6,
         size: 'large',
-        value: 15
+        price: 15
     },
 
     {
@@ -24,7 +24,7 @@ export const medicines = [
         image: 'medical-tricorder.jpg',
         weight: 4,
         size: 'N/A',
-        value: 100
+        price: 100
     },
 
     {
@@ -33,7 +33,7 @@ export const medicines = [
         image: 'wound-seal.jpg',
         weight: 10,
         size: 'large',
-        value: 12
+        price: 12
     },
 
     {
@@ -42,7 +42,7 @@ export const medicines = [
         image: 'e-blanket.jpg',
         weight: 8,
         size: 'small',
-        value: 9
+        price: 9
     },
 
     {
@@ -51,7 +51,7 @@ export const medicines = [
         image: 'uv-water-filter.jpg',
         weight: 7,
         size: 'small',
-        value: 8
+        price: 8
     },
 
     {
@@ -60,7 +60,7 @@ export const medicines = [
         image: 'cortical-stimulator.jpg',
         weight: 8,
         size: 'small',
-        value: 80
+        price: 80
     }
 
 

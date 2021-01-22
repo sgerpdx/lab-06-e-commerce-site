@@ -18,3 +18,9 @@ for (let item of cart) {
 
 }
 
+
+const tfoot = document.getElementById('table-foot');
+
+const totalPrice = calcOrderTotal(cart, medicines);
+
+tfoot.append(totalPrice);
