@@ -12,23 +12,23 @@ const test = QUnit.test;
 
 // Test for renderItem function:
 
-// test('This test should take in a medical item object and retun a list item (<li>)', (assert) => {
+test('This test should take in a medical item object and retun a list item (<li>)', (assert) => {
 
-//     const scanner = {
-//         id: 1010,
-//         name: 'Scanner',
-//         image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Twelfth_Doctor%27s_Sonic_Screwdriver.jpg',
-//         weight: 4,
-//         size: 'Small',
-//         value: 44,
-//     };
+    const scanner = {
+        id: 1010,
+        name: 'Scanner',
+        image: 'alchemy-logo.png',
+        weight: 4,
+        size: 'Small',
+        value: 44,
+    };
 
-//     const expected = `<li class="medical-item"><p class="item-id">1010</p><h4 class="item-name">Scanner</h4><img class="item-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Twelfth_Doctor%27s_Sonic_Screwdriver.jpg"><p class="item-weight">4 oz</p><p class="item-size">Small</p><p class="item-value">44 Borg Bucks</p><button>Add to Cart</button></li>`;
+    const expected = `<li class="medical-item"><p class="medicine-id">1010</p><h4 class="medicine-name">Scanner</h4><img class="medicine-image" src="../assets/alchemy-logo.png"><p class="medicine-weight">4 oz</p><p class="medicine-size">Small</p><p class="medicine-value">44 Borg Bucks</p><button>Add to Cart</button></li>`;
 
-//     const actual = renderItem(scanner);
+    const actual = renderItem(scanner);
 
-//     assert.equal(actual.outerHTML, expected);
-// });
+    assert.equal(actual.outerHTML, expected);
+});
 
 
 
@@ -43,7 +43,7 @@ test('This test should take in the unique item id 1002 and the array medicines a
         image: 'hypospray-large.jpg',
         weight: 6,
         size: 'large',
-        value: 15,
+        price: 15,
     };
 
     const actual = findById(1002, medicines);
@@ -81,7 +81,7 @@ test('This test should take in separate-array objects cartScanner and inventoryS
         image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Twelfth_Doctor%27s_Sonic_Screwdriver.jpg',
         weight: 4,
         size: 'Small',
-        value: 30
+        price: 30
     };
 
     const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120</td></tr>`;
