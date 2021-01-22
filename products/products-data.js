@@ -1,4 +1,3 @@
-
 export const medicines = [
     {
         id: 1001,
@@ -63,7 +62,5 @@ export const medicines = [
         price: 80
     }
 
-
-
-
 ];
+

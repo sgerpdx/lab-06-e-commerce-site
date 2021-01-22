@@ -1,5 +1,3 @@
-
-
 export function renderItem(medicine) {
 
     const li = document.createElement('li');
@@ -42,3 +40,4 @@ export function renderItem(medicine) {
     return li;
 
 }
+

@@ -12,9 +12,13 @@ export function findById(id, array) {
 }
 
 
+
 export function calcItemTotal(quantity, price) {
+
     return quantity * price;
+
 }
+
 
 
 export function calcOrderTotal(cartArray, medicinesArray) {
@@ -39,5 +43,4 @@ export function calcOrderTotal(cartArray, medicinesArray) {
     return orderTotal;
 
 }
-
 
