@@ -3,11 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="../products/products.css">
     <title>Triton Station Medical</title>
 </head>
 
@@ -18,17 +14,17 @@
         <section>Your Cart:</section>
         <hr />
         <section class="inventory">
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                </tr>
-                <tr>
-                    <td class="medicine-name">Scanner</td>
-                    <td class="cart-quantity">4</td>
-                    <td class="medicine-total-price">120</td>
-                </tr>
+            <table id="table-body">
+                <th>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </th>
+                <tbody id="table-body">
+
+                </tbody>
 
 
             </table>
@@ -38,7 +34,7 @@
     <footer>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="shopping-cart.js"></script>
 </body>
 
 </html>

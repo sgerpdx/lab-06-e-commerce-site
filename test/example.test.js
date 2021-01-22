@@ -2,10 +2,9 @@
 
 import { renderItem } from '../products/render-products.js';
 import { findById } from '../utils.js';
-import { calcItemTotal } from '../utils.js';
+import { calcItemTotal, calcOrderTotal } from '../utils.js';
 import { medicines } from '../products/products-data.js';
 import { cart } from '../cart/cart-data.js';
-import { calcOrderTotal } from '../cart/shopping-cart.js';
 import { renderCart } from '../cart/render-cart.js';
 
 
@@ -53,7 +52,7 @@ test('This test should take in the unique item id 1002 and the array medicines a
 });
 
 
-//border ////////////////////////
+
 //Test for calcItemTotal function:
 
 test('This test should take in a quantity of 8 and a price of 10 and return a total price of 80', (assert) => {
@@ -91,3 +90,15 @@ test('This test should take in a medical item object and retun a list item (<li>
 
     assert.equal(actual.outerHTML, expected);
 });
+
+
+// Test for calcOrderTotal function:
+
+// test('This test should take in a quantity of 8 and a price of 10 and return a total price of 80', (assert) => {
+
+//     const expected = 80;
+
+//     const actual = calcItemTotal(8, 10);
+
+//     assert.deepEqual(actual, expected);
+// });

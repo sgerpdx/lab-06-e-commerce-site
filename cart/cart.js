@@ -1,18 +1,18 @@
 
 
-import { cart } from '../cart/cart-data.js';
-import { medicines } from './products-data.js';
-import { findById, calcItemTotal } from '../utils.js';
-import { renderCart } from '../cart/render-cart.js';
+// import { cart } from '../cart/cart-data.js';
+// import { medicines } from './products-data.js';
+// import { findById, calcItemTotal } from '../utils.js';
+// import { renderCart } from '../cart/render-cart.js';
 
 
-const inventoryDescription = findById(1002, medicines);
-const cartDescription = findById(1002, cart);
+// const inventoryDescription = findById(1002, medicines);
+// const cartDescription = findById(1002, cart);
 
-const inventoryPrice = inventoryDescription.price;
-const cartQuantity = cartDescription.quantity;
+// const inventoryPrice = inventoryDescription.price;
+// const cartQuantity = cartDescription.quantity;
 
-const itemTotal = calcItemTotal(cartQuantity, inventoryPrice);
+// const itemTotal = calcItemTotal(cartQuantity, inventoryPrice);
 
 
 

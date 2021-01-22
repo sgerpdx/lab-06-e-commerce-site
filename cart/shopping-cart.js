@@ -1,33 +1,29 @@
-import { findById, calcItemTotal } from '../utils.js';
+import { findById } from '../utils.js';
+import { medicines } from '../products/products-data.js';
+import { cart } from './cart-data.js';
+import { renderCart } from './render-cart.js';
 
-export function calcOrderTotal(medicines, cart) {
+// const list = document.getElementById('list');
 
-    let orderTotal = 0;
+// for (const med of medicines) {
 
-    for (let med of medicines) {
+//     const inventoryItem = renderItem(med);
+//     list.prepend(inventoryItem);
 
-        if (medicines.item.id === cart.item.id) {
+// }
 
-            const itemInCart = med.id;
 
-            const inventoryDescription = findById(itemInCart, medicines);
-            const cartDescription = findById(itemInCart, cart);
+const tbody = document.getElementById('table-body');
 
-            const inventoryPrice = inventoryDescription.price;
-            const cartQuantity = cartDescription.quantity;
+for (let item of cart) {
 
-            const itemTotal = calcItemTotal(cartQuantity, inventoryPrice);
+    const lineItem = item;
+    //this is pulling relevent meds (inventory) based on matches to cart ids
+    const med = findById(lineItem.id, medicines);
 
-            orderTotal = orderTotal + itemTotal;
-
-        }
-
-    }
-
-    return orderTotal;
-
+    const tableRow = renderCart(med, lineItem);
+    console.log(tableRow);
+    tbody.append(tableRow);
 
 }
-
-// this funciton is possibly supposed to encompass much of the const-driven development in cart.js -- integration will need to be investigated;
 
