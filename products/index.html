@@ -14,9 +14,10 @@
     <header>
     </header>
     <main>
-        <section>Scroll down to view available inventory:</section>
-        <hr />
-        <section class="inventory">
+        <section class="inventory" id="top">
+            <div class="directions">Scroll down to view available inventory:</div>
+            <nav class="cart-nav" id="cart-link"><a href="../cart/index.html">go to your cart</a></nav>
+            <hr />
             <div class="items-grid">
                 <ul id="list">
                     <li>
@@ -36,6 +37,7 @@
         </section>
     </main>
     <footer>
+        <a href="#top">return to top</a>
     </footer>
 
     <script type="module" src="products.js"></script>
