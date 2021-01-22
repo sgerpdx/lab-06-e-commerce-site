@@ -7,7 +7,7 @@ const list = document.getElementById('list');
 for (const med of medicines) {
 
     const inventoryItem = renderItem(med);
-    list.prepend(inventoryItem);
+    list.append(inventoryItem);
 
 }
 
