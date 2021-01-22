@@ -1,3 +1,5 @@
+import { getCart } from '../cart/cart-api.js';
+
 export function renderItem(medicine) {
 
     const li = document.createElement('li');
@@ -34,6 +36,16 @@ export function renderItem(medicine) {
     li.append(pValue);
 
     const button = document.createElement('button');
+
+    button.addEventListener('click', () => {
+
+        //const CART = 'CART';
+        //const defaultEmptyCart = [];
+        return getCart();
+
+    });
+
+
     button.textContent = 'Add to Cart';
     li.append(button);
 
