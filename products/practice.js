@@ -128,3 +128,19 @@ const cart = getCart();
 
 
 
+button.addEventListener('click', () => {
+
+    const stringyCart = localStorage.getItem(cart);
+
+    if (localStorage.getItem(stringyCart) === null) {
+
+        button.disabled = true;
+
+    } else {
+
+        alert(JSON.stringify(cart, true, 2));
+        clearCart();
+
+    }
+
+});
