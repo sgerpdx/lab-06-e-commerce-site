@@ -45,6 +45,7 @@ test('This test should take in the unique item id 1002 and the array medicines a
         weight: 6,
         size: 'large',
         price: 15,
+        currency: 'locutus-coin-40.png'
     };
 
     const actual = findById(1002, medicines);
@@ -82,10 +83,11 @@ test('This test should take in separate-array objects cartScanner and inventoryS
         image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Twelfth_Doctor%27s_Sonic_Screwdriver.jpg',
         weight: 4,
         size: 'Small',
-        price: 30
+        price: 30,
+        currency: 'locutus-coin-40.png'
     };
 
-    const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120</td></tr>`;
+    const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120 Locutii</td></tr>`;
 
     const actual = renderCart(inventoryScanner, cartScanner);
 
