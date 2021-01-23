@@ -20,10 +20,11 @@ test('This test should take in a medical item object and retun a list item (<li>
         image: 'alchemy-logo.png',
         weight: 4,
         size: 'Small',
-        value: 44,
+        price: 44,
+        currency: 'locutus-coin-40.png'
     };
 
-    const expected = `<li class="medical-item"><p class="medicine-id">1010</p><h4 class="medicine-name">Scanner</h4><img class="medicine-image" src="../assets/alchemy-logo.png"><p class="medicine-weight">4 oz</p><p class="medicine-size">Small</p><p class="medicine-value">44 Borg Bucks</p><button>Add to Cart</button></li>`;
+    const expected = `<li class="medical-item"><p class="medicine-id">1010</p><h4 class="medicine-name">Scanner</h4><img class="medicine-image" src="../assets/alchemy-logo.png"><p class="medicine-weight">4 oz</p><p class="medicine-size">Small</p><p class="medicine-value">44 Locutii</p><img class="currency-image" src="../assets/locutus-coin-40.png"><button>Add to Cart</button></li>`;
 
     const actual = renderItem(scanner);
 
