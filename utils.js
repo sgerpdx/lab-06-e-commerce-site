@@ -25,6 +25,3 @@ export function calcOrderTotal(cartArray, medicinesArray) {
     return orderTotal;
 }
 
-
-
-

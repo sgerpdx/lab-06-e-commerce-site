@@ -1,10 +1,7 @@
-// IMPORT MODULES under test here:
-
 import { renderItem } from '../products/render-products.js';
 import { findById } from '../utils.js';
 import { calcItemTotal, calcOrderTotal } from '../utils.js';
 import { medicines } from '../products/products-data.js';
-import { cart } from '../cart/cart-data.js';
 import { renderCart } from '../cart/render-cart.js';
 
 
@@ -32,9 +29,7 @@ test('This test should take in a medical item object and retun a list item (<li>
 });
 
 
-
 // Test for findById function:
-
 
 test('This test should take in the unique item id 1002 and the array medicines and return the object for Large Hypospray', (assert) => {
 
@@ -54,7 +49,6 @@ test('This test should take in the unique item id 1002 and the array medicines a
 });
 
 
-
 //Test for calcItemTotal function:
 
 test('This test should take in a quantity of 8 and a price of 10 and return a total price of 80', (assert) => {
@@ -65,7 +59,6 @@ test('This test should take in a quantity of 8 and a price of 10 and return a to
 
     assert.deepEqual(actual, expected);
 });
-
 
 
 // Test for renderCart function:
@@ -151,3 +144,4 @@ test('This test should take in arrays fruitCart and fruitCatalog and return a to
 
     assert.deepEqual(actual, expected);
 });
+

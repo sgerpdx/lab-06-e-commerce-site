@@ -1,6 +1,5 @@
 import { findById, calcOrderTotal } from '../utils.js';
 import { medicines } from '../products/products-data.js';
-//import { cart } from './cart-data.js';
 import { renderCart } from './render-cart.js';
 import { clearCart } from './cart-api.js';
 
@@ -26,9 +25,7 @@ const totalPrice = calcOrderTotal(cart, medicines);
 tfoot.append(`Order Total: ${totalPrice} Locutii`);
 
 const button = document.getElementById('requisition');
-//button.disabled = true;
 
-//const stringyCart = localStorage.getItem(cart);
 
 if (cart.length === 0) {
 
@@ -46,3 +43,4 @@ button.addEventListener('click', () => {
     window.location.href = '../index.html';
 
 });
+

@@ -1,5 +1,4 @@
-import { addToCart, getCart } from '../cart/cart-api.js';
-import { medicines } from './products-data.js';
+import { addToCart } from '../cart/cart-api.js';
 
 export function renderItem(medicine) {
 

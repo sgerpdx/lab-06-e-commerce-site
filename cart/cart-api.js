@@ -1,7 +1,9 @@
 import { findById } from '../utils.js';
 
+
 const CART = 'CART';
 const defaultEmptyCart = [];
+
 
 export function getCart() {
 
@@ -45,12 +47,3 @@ export function clearCart() {
     localStorage.setItem(CART, stringyDefaultCart);
 }
 
-
-// export function buttonOff() {
-//     return document.getElementById('guess-button').disabled = true;
-// }
-
-// then, in the event listener, in an if statement use buttonOff(); to disable if nothing in cart
-
-// inside EL, use: alert('text covering contents of cart');
-//
