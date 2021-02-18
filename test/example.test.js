@@ -1,10 +1,7 @@
-// IMPORT MODULES under test here:
-
 import { renderItem } from '../products/render-products.js';
 import { findById } from '../utils.js';
 import { calcItemTotal, calcOrderTotal } from '../utils.js';
 import { medicines } from '../products/products-data.js';
-import { cart } from '../cart/cart-data.js';
 import { renderCart } from '../cart/render-cart.js';
 
 
@@ -20,10 +17,11 @@ test('This test should take in a medical item object and retun a list item (<li>
         image: 'alchemy-logo.png',
         weight: 4,
         size: 'Small',
-        value: 44,
+        price: 44,
+        currency: 'locutus-coin-40.png'
     };
 
-    const expected = `<li class="medical-item"><p class="medicine-id">1010</p><h4 class="medicine-name">Scanner</h4><img class="medicine-image" src="../assets/alchemy-logo.png"><p class="medicine-weight">4 oz</p><p class="medicine-size">Small</p><p class="medicine-value">44 Borg Bucks</p><button>Add to Cart</button></li>`;
+    const expected = `<li class="medical-item"><p class="medicine-id">1010</p><h4 class="medicine-name">Scanner</h4><img class="medicine-image" src="../assets/alchemy-logo.png"><p class="medicine-weight">4 oz</p><p class="medicine-size">Small</p><p class="medicine-value">44 Locutii</p><img class="currency-image" src="../assets/locutus-coin-40.png"><button>Add to Cart</button></li>`;
 
     const actual = renderItem(scanner);
 
@@ -31,9 +29,7 @@ test('This test should take in a medical item object and retun a list item (<li>
 });
 
 
-
 // Test for findById function:
-
 
 test('This test should take in the unique item id 1002 and the array medicines and return the object for Large Hypospray', (assert) => {
 
@@ -44,13 +40,13 @@ test('This test should take in the unique item id 1002 and the array medicines a
         weight: 6,
         size: 'large',
         price: 15,
+        currency: 'locutus-coin-40.png'
     };
 
     const actual = findById(1002, medicines);
 
     assert.deepEqual(actual, expected);
 });
-
 
 
 //Test for calcItemTotal function:
@@ -63,7 +59,6 @@ test('This test should take in a quantity of 8 and a price of 10 and return a to
 
     assert.deepEqual(actual, expected);
 });
-
 
 
 // Test for renderCart function:
@@ -81,10 +76,11 @@ test('This test should take in separate-array objects cartScanner and inventoryS
         image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Twelfth_Doctor%27s_Sonic_Screwdriver.jpg',
         weight: 4,
         size: 'Small',
-        price: 30
+        price: 30,
+        currency: 'locutus-coin-40.png'
     };
 
-    const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120</td></tr>`;
+    const expected = `<tr class="merch-item"><td class="inventory-name">Scanner</td><td class="merch-quantity">4</td><td class="merch-total-price">120 Locutii</td></tr>`;
 
     const actual = renderCart(inventoryScanner, cartScanner);
 
@@ -148,3 +144,4 @@ test('This test should take in arrays fruitCart and fruitCatalog and return a to
 
     assert.deepEqual(actual, expected);
 });
+

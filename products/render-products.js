@@ -1,3 +1,5 @@
+import { addToCart } from '../cart/cart-api.js';
+
 export function renderItem(medicine) {
 
     const li = document.createElement('li');
@@ -30,12 +32,22 @@ export function renderItem(medicine) {
 
     const pValue = document.createElement('p');
     pValue.classList.add('medicine-value');
-    pValue.textContent = `${medicine.price} Borg Bucks`;
+    pValue.textContent = `${medicine.price} Locutii`;
     li.append(pValue);
+
+    const imgCurrency = document.createElement('img');
+    imgCurrency.classList.add('currency-image');
+    imgCurrency.src = `../assets/${medicine.currency}`;
+    li.append(imgCurrency);
 
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
     li.append(button);
+    button.addEventListener('click', () => {
+
+        addToCart(medicine.id);
+
+    });
 
     return li;
 

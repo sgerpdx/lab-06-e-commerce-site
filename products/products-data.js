@@ -5,7 +5,8 @@ export const medicines = [
         image: 'hypospray-small.jpg',
         weight: 4,
         size: 'small',
-        price: 10
+        price: 10,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -14,7 +15,8 @@ export const medicines = [
         image: 'hypospray-large.jpg',
         weight: 6,
         size: 'large',
-        price: 15
+        price: 15,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -22,8 +24,9 @@ export const medicines = [
         name: 'Medical Tricorder',
         image: 'medical-tricorder.jpg',
         weight: 4,
-        size: 'N/A',
-        price: 100
+        size: 'one-size',
+        price: 100,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -32,7 +35,8 @@ export const medicines = [
         image: 'wound-seal.jpg',
         weight: 10,
         size: 'large',
-        price: 12
+        price: 12,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -41,7 +45,8 @@ export const medicines = [
         image: 'e-blanket.jpg',
         weight: 8,
         size: 'small',
-        price: 9
+        price: 9,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -50,7 +55,8 @@ export const medicines = [
         image: 'uv-water-filter.jpg',
         weight: 7,
         size: 'small',
-        price: 8
+        price: 8,
+        currency: 'locutus-coin-40.png'
     },
 
     {
@@ -59,7 +65,8 @@ export const medicines = [
         image: 'cortical-stimulator.jpg',
         weight: 8,
         size: 'small',
-        price: 80
+        price: 80,
+        currency: 'locutus-coin-40.png'
     }
 
 ];

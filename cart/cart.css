@@ -96,6 +96,14 @@ footer {
     width: 720px;
 }
 
+td {
+    text-align: right;
+}
+
+tfoot {
+    text-align: left;
+}
+
 button {
     background-color: orange;
     border-radius: 5px;
